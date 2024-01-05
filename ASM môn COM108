@@ -1,0 +1,434 @@
+#include <conio.h> 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h> 
+#include <Windows.h>
+
+void songuyen();
+void uscbsc();
+void karaoke();
+void tiendien();
+void doitien();
+void laisuat();
+void vaytienmuaxe();
+void sinhvien();
+void fpoly_lott();
+void phanso();
+const int t=196;
+const int z=179;
+void main(void)
+{ 
+int imenu;
+int luaChon;
+do
+{		
+ system("cls");
+ printf ("Thay Do Quang Ngoc\n");
+ printf ("Lop SA18304: PS30120 Huynh Thi Nhu Y\n");
+ printf("\t\t    %c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n",218,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,191); 
+ printf("\t            %c\t     MAIN MENU ASSIGNMENT              %c\n",179,179); 
+ printf("\t\t    %c%c----------------------------------------%c%c\n\n",192,196,196,217); 
+ printf("\t\t%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n",218,196,196,196,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,191,191); 
+ printf("                %c",z);
+ printf("                                                 %c\n",z); printf("\t\t%c  1. Kiem tra so nguyen",z);
+ printf("                          %c\n",z); printf("\t\t%c  2. Tim uoc so chung va boi so chung cua 2 so",z); 
+ printf("   %c\n",z); printf("\t\t%c  3. Chuong trinh tinh tien cho quan karaoke",z);
+ printf("     %c\n",z); printf("\t\t%c  4. Tinh tien dien",z);
+ printf("                              %c\n",z); printf("\t\t%c  5. Chuc nang doi tien",z);
+ printf("                          %c\n",z); printf("\t\t%c  6. Tinh lai suat vay ngan hang vay tra gop",z);
+ printf("     %c\n",z); printf("\t\t%c  7. Xay dung chuong trinh vay tien mua xe",z);
+ printf("       %c\n",z); printf("\t\t%c  8. Sap xep thong tin sinh vien",z);
+ printf("                 %c\n",z); printf("\t\t%c  9. Game fpoly-lott (2/15) ",z);
+ printf("                     %c\n",z); printf("\t\t%c 10. Chuong trinh tinh toan phan so",z);
+ printf("              %c\n",z); printf("\t\t%c 11. Thoat",z); printf("                                       %c\n",z);                                                                                                                                                                    
+ printf("                %c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n\n",192,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,t,217);
+  
+ printf("  \t\t      Chon muc tuong ung(1-->11): "); 
+ scanf("%d", &imenu); 
+ switch(imenu) 
+ { 
+  	case 1:  //---------------------------------------------------
+	{  system("cls");
+			 	 printf("* * * * * * * * * * * * * * * *");
+				 printf("\nKiem tra so nguyen:\n\n");
+	    songuyen();
+	    
+		break;
+	}
+  	case 2: //---------------------------------------------------
+  	{  system("cls");
+				 printf("* * * * * * * * * * * * * * * * * * * * * *");
+				 printf("\nTim uoc chung va boi chung cua hai so:\n\n");
+	  	uscbsc();
+	
+	    break; 
+	}
+  	case 3: //---------------------------------------------------
+   	{   system("cls");
+				 printf("* * * * * * * * * * * * * * * *");
+				 printf("\nTinh tien cho quan karaoke:\n\n");
+		karaoke();
+	
+		break; 
+	}
+	case 4: { //---------------------------------------------------
+	    system("cls");
+				 printf("* * * * * * * * * * * * * * * *");
+				 printf("\nTinh tien dien:\n\n");
+	  	tiendien ();  
+		break;
+	}
+	case 5: { //---------------------------------------------------
+	    system("cls");
+				 printf("* * * * * * * * * * * * * * * *");
+				 printf("\nDoi tien:\n\n");
+		doitien ();
+		break;
+	}
+	case 6: { //---------------------------------------------------
+		system("cls");
+				 printf("* * * * * * * * * * * * * * * *");
+				 printf("\nTinh lai suat tra gop vay ngan hang:\n\n");
+		laisuat();
+		break;
+	}
+	case 7: { //---------------------------------------------------
+		system("cls");
+				 printf("* * * * * * * * * * * * * * * *");
+				 printf("\nVay tien mua xe:\n\n");
+		vaytienmuaxe();
+		break;
+	}
+	case 8: { //---------------------------------------------------
+		 system("cls");
+			     printf("* * * * * * * * * * * * * * * *");
+				 printf("\nSap xep thong tin sinh vien:\n\n");
+		sinhvien();
+		break;
+	}
+	case 9: { //---------------------------------------------------
+	     system("cls");
+				 printf("* * * * * * * * * * * * * * * *");
+				 printf("\nGame FPOLY LOTT:\n\n");
+		fpoly_lott();
+		break;
+	}
+	case 10: { //---------------------------------------------------
+		system("cls");
+				 printf("* * * * * * * * * * * * * * * *");
+				 printf("\nTinh phan so:\n\n");
+		phanso();
+		break;
+	}
+	case 11:{
+		printf("\n* * * * * * * * * * * * * * * *");
+				 printf("\nCam on ban da su dung Menu\n\n");
+				 printf("* * * * * * * * * * * * * * * *\n");
+		break;
+	}
+  	default:
+		printf("%d Ban da nhap sai lua chon\n\n",imenu);
+	}
+	
+getch();
+}
+while (imenu!=11);
+}
+
+
+void songuyen()
+{
+float x;
+int count=0;
+  printf("\nMoi ban nhap mot so bat ky: ");
+  scanf("%f",&x);
+  if(x==(int)x){
+    printf("\nx la so nguyen",x);
+  }else{
+    printf("\nx khong phai la so nguyen",x);
+  }	
+     int i,y; 
+	  y=x; 
+    if(x<2){
+	printf("\nx khong phai so nguyen to",&x);}
+	else {
+	  for(i=2 ;i<y; i++){		 
+         if(y% i ==0){	  
+        count++;}
+		}	
+		if(count ==0){   	
+ 	     printf("\nx la so nguyen to ",&x);
+ 	 
+                     }else {   	
+                         printf("\nx khong phai la so nguyen to ",&x); 
+                    }
+                    }
+    if(x>0){
+      i=sqrt(x);
+    if((i*i)==x)
+         printf("\nx la so chinh phuong\n");
+     else
+         printf("\nx khong phai la so chinh phuong\n");
+                    }
+}
+
+
+
+//---------------------------------------------------
+void uscbsc()
+{
+int a,b,uscln,bscnn;
+	//input
+	printf("nhap vao so a: ");
+	scanf("%d",&a);
+	printf("nhap vao so b: ");
+	scanf("%d",&b);
+	//xu ly tinh toan
+	int so1 = a;
+	int so2 = b;
+	if(a==0 || b==0)
+	{
+		uscln = a+b;
+		printf("uoc so chung lon nhat cua %d va %d la %d \n",so1,so2,uscln);
+	}
+	else
+	{
+		while(a!=b)
+		{
+			if(a>b)
+			{
+				a = a-b;
+			}
+			else
+			{
+				b = b-a;
+			}
+		}
+		uscln = a;
+		printf("uscln cua %d va %d la %d \n",so1,so2,uscln);
+	}
+	bscnn =(so1*so2)/uscln;
+	printf("bscnn cua %d va %d la %d \n",so1,so2,bscnn);
+	
+
+}
+
+
+
+//---------------------------------------------------
+void karaoke()
+{
+ float thoigianbatdau,thoigianketthuc,tongtien,sogio;
+ Nhaplai:
+      printf ("nhap thoi gian bat dau:",thoigianbatdau);
+     scanf ("%f" ,&thoigianbatdau);
+      printf ("nhap thoi gian ket thuc:",thoigianketthuc); scanf ("%f", &thoigianketthuc);
+      if   ( thoigianbatdau < 12 || thoigianketthuc > 23 ){
+ 	  printf ("quan chi hoat dong tu 12h den 23h\n");
+ 	  printf("Xin vui long quay lai sau!!! \n");
+ 	goto Nhaplai;
+     }	
+     
+          sogio = thoigianketthuc - thoigianbatdau;
+          if (sogio <= 3) {
+ 	       tongtien = sogio*150000;
+          }else {
+          tongtien= 3*150000+ (sogio-3)*150000*0.7;
+          }
+          if (thoigianbatdau >=14 && 17>= thoigianbatdau){
+          	tongtien = tongtien*0.9;
+		  }
+    
+		printf ("so tien can thanh toan la: %.0f" ,tongtien);	
+}
+
+
+
+//---------------------------------------------------
+void tiendien()
+{
+	  	float sokw,sotien;
+        printf ("nhap vao so kw tieu thu:"); scanf ("%f",&sokw);
+        if (sokw<=50) sotien=sokw*1678;
+        else if (sokw>=100) sotien=50*1678+(sokw-50)*1734;
+        else if (sokw>=200) sotien=50+1678+50*1734+(sokw-100)*2014;
+        else if (sokw>=300) sotien=50+1678+50*1734+100+(sokw-200)*2536;
+        else if (sokw>=400) sotien=50+1678+50*1734+100+(sokw-300)*2834;
+        else 
+        sotien= 50*1678+50*1734+100*2014+100*2536+100*2834+(sokw-400)*2927;
+        printf ("So tien dien phai tra:%f",sotien); 	
+}
+//---------------------------------------------------
+void doitien()
+{
+ 	
+}
+//---------------------------------------------------
+void laisuat()
+{
+int tienvay;
+	printf("Nhap so tien can vay: "); scanf("%d",&tienvay);
+	int thang;
+	printf("\nSo tien can tra trong 12 thang: \n");
+	printf("+--------------------------------------------------------------------------+\n");
+	printf("| Ky han | Lai phai tra | Goc phai tra | So tien can tra | So tien con lai |\n");
+	int laiphaitra;
+	int gocphaitra;
+	int sotiencantra;
+	int sotienconlai=tienvay;
+	for(thang=1;thang<=12;thang++)
+	{
+		laiphaitra = (sotienconlai)*85;
+		gocphaitra = tienvay/12;
+		sotiencantra = laiphaitra + gocphaitra;
+		sotienconlai = sotienconlai - gocphaitra;
+		printf("|--------------------------------------------------------------------------|\n");
+		printf("| %6d | %12d | %12d | %15d | %15d |\n",thang,laiphaitra,gocphaitra,sotiencantra,sotienconlai);
+	}
+	printf("+--------------------------------------------------------------------------+");
+}
+//---------------------------------------------------
+void vaytienmuaxe()
+{
+
+
+}
+
+//---------------------------------------------------
+void sinhvien()
+{
+	{
+	struct sinhVien{
+	char hoTen[50];
+	float diemTrungBinh;
+};
+    int n,i,j; 
+        printf("Nhap so luong sinh vien: ");scanf("%d",&n);
+        struct sinhVien sv[n];
+        for(i =0;i<n;i++){
+        	fflush(stdin);
+        printf("\nNhap ho ten sinh vien:");gets(sv[i].hoTen);
+        printf("\nNhap diem trung binh sinh vien:");scanf("%f",&sv[i].diemTrungBinh);
+      }
+      
+      for(i=0;i<n;i++){
+      	for(j=i+1;j<n;j++){
+      		if(sv[i].diemTrungBinh<sv[j].diemTrungBinh){
+      			struct sinhVien temp;
+      		    temp = sv[i];
+      			sv[i]=sv[j]; 
+				sv[j]=temp; 
+			}
+		}
+	}  		
+      printf("--------------Danh sach sinh vien--------------");
+      for(i = 0;i<n;i++){
+      	printf("\n");
+      	printf("\nSinh vien: %s",sv[i].hoTen);
+      	printf("\nDiem Trung Binh:%.1f\n",sv[i].diemTrungBinh);
+      	if(sv[i].diemTrungBinh>=9){
+      		printf("Hoc luc: Xuat xac");
+      	
+      	}else if(sv[i].diemTrungBinh>=8){
+      		printf("Hoc luc: Gioi");
+      	} else if(sv[i].diemTrungBinh>=6.5){
+      		printf("Hoc luc: Kha");
+		}else if(sv[i].diemTrungBinh>=5){
+      		printf("Hoc luc: Trung Binh");
+      	}else printf("Hoc luc: Yeu");
+      	}
+}	
+}
+//---------------------------------------------------
+void fpoly_lott()
+{
+ 	
+}
+//---------------------------------------------------
+void phanso()
+{
+int tuso1,mauso1,tuso2,mauso2;
+	int i;
+	printf("Nhap tu so thu 1: "); scanf("%d",&tuso1);
+	printf("Nhap mau so thu 1: "); scanf("%d",&mauso1);
+	printf("\nPhan so thu 1: %d/%d",tuso1,mauso1);
+	printf("\n-----------------------------\n");
+	printf("Nhap tu so thu 2: "); scanf("%d",&tuso2);
+	printf("Nhap mau so thu 2: "); scanf("%d",&mauso2);
+	printf("\nPhan so thu 2: %d/%d",tuso2,mauso2);
+	printf("\n======================================\n");
+	//--Tinh tong hai phan so---------------
+	int tucuatong= (tuso1 * mauso2) + (tuso2 * mauso1);
+	int maucuatong=(mauso1 * mauso2);
+	for(i=maucuatong;i>=1;i--){
+		
+		if(tucuatong%i==0 && maucuatong%i==0){
+			
+			if(maucuatong/i==1){
+				printf("Tong hai phan so: %d/%d + %d/%d = %d\n",tuso1,mauso1,tuso2,mauso2,tucuatong/i);
+			}
+			else{
+				printf("Tong hai phan so: %d/%d + %d/%d = %d/%d\n",tuso1,mauso1,tuso2,mauso2,tucuatong/i,maucuatong/i);
+			}
+			break;
+		}
+	}
+	//--Tinh hieu hai phan so----------------
+	int tucuahieu=(tuso1*mauso2)-(tuso2*mauso1);
+	int maucuahieu=(mauso1*mauso2);
+	for(i=maucuahieu;i>=1;i--){
+		if(tucuahieu%i==0 && maucuahieu%i==0){
+			if(maucuahieu/i==1){
+				printf("Hieu hai phan so: %d/%d - %d/%d = %d\n",tuso1,mauso1,tuso2,mauso2,tucuahieu/i);
+			}
+			else{
+			printf("Hieu hai phan so: %d/%d - %d/%d = %d/%d\n",tuso1,mauso1,tuso2,mauso2,tucuahieu/i,maucuahieu/i);
+			}
+			break;
+		}
+	}
+	//--Tinh tich hai phan so-----------------
+	int tucuatich=tuso1*tuso2;
+	int maucuatich=mauso1*mauso2;
+	
+	for(i=maucuatich;i>0;i--){
+		
+		if(tucuatich%i==0 && maucuatich%i==0){
+			if(maucuatich/i==1){
+				printf("Tich hai phan so: %d/%d x %d/%d = %d\n",tuso1,mauso1,tuso2,mauso2,tucuatich/i);
+			}
+			else{
+			printf("Tich hai phan so: %d/%d x %d/%d = %d/%d\n",tuso1,mauso1,tuso2,mauso2,tucuatich/i,maucuatich/i);
+			}
+			break;
+		}
+	}
+	//--Tinh thuong hai phan so---------------------
+	int tucuathuong = tuso1 * mauso2;
+	int maucuathuong = mauso1 * tuso2;
+	for(i=maucuathuong;i>0;i--){
+		
+		if(tucuathuong%i==0 && maucuathuong%i==0){
+			
+			if(maucuathuong/i==1){
+				printf("Thuong hai phan so: %d/%d %c %d/%d = %d\n",tuso1,mauso1,247,tuso2,mauso2,tucuathuong/i);
+			}
+			else{
+			printf("Thuong hai phan so: %d/%d %c %d/%d = %d/%d\n",tuso1,mauso1,247,tuso2,mauso2,tucuathuong/i,maucuathuong/i);
+			}
+			break;
+		}
+	}
+	for(i=maucuathuong;i<0;i++){
+		if(tucuathuong%i==0 && maucuathuong%i==0){
+			if(maucuathuong/i==1){
+				printf("Thuong hai phan so: %d/%d %c %d/%d = %d\n",tuso1,mauso1,247,tuso2,mauso2,tucuathuong/i);
+			}
+			else{
+			printf("Thuong hai phan so: %d/%d %c %d/%d = %d/%d\n",tuso1,mauso1,247,tuso2,mauso2,tucuathuong/i,maucuathuong/i);
+			}
+			break;
+		}
+	}			 
+}
+//---------------------------------------------------
